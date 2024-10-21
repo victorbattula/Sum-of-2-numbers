@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+
+    char a[10]="kohli";
+    char b[10]="dohni";
+    char c[10]="vijay" ;
+    for(int i=0;i<5;i++)
+    {
+        printf("\t%c",b[i]);
+    }
+    printf("\n");
+    for(int i=0;i<5;i++)
+    {
+
+        printf("\t%c",a[i]);
+    }
+    printf("\n");
+    for(int i=0;i<5;i++)
+    {
+        printf("\t%c",c[i]);
+    }
+}
