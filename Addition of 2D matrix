@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int i, col, row;
+int add[2][2], array1[2][2] = {{1, 2}, {6, 5}}, array2[2][2] = {{3, 4}, {5, 7}};
+
+int main()
+{
+    // Adding the two matrices
+    for(row = 0; row < 2; row++)
+    {
+        for(col = 0; col < 2; col++)
+        {
+            add[row][col] = array1[row][col] + array2[row][col];
+        }
+    }
+
+    // Displaying the sum matrix
+    printf("Addition of the two matrices:\n");
+    for(row = 0; row < 2; row++)
+    {
+        for(col = 0; col < 2; col++)
+        {
+            printf("\t%d", add[row][col]);
+        }
+        printf("\n");  // Move to the next line after each row
+    }
+
+    return 0;
+}
