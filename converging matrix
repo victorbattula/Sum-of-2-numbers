@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main()
+{
+    for(int i=1,j=999;i<j;i++,j--)
+    {
+        printf("\n%d",i);
+        printf("\n%d",j);
+    }
+}
