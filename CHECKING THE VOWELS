@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <ctype.h>
+int main() {
+    char str[100];
+    int i = 0;
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+    printf("Vowels in the string are: ");
+    while (str[i] != '\0') {
+        char ch = tolower(str[i]); // Convert to lowercase for comparison
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            printf("%c ", str[i]); 
+        }
+        i++;
+    }
+    return 0;
+}
